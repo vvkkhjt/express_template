@@ -1,0 +1,25 @@
+{
+  "name": "autonline-meta",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "dev": "cross-env NODE_ENV=development && set debug=*,-not_this && nodemon app.js",
+    "prod": "cross-env NODE_ENV=production node app.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "^4.1.1",
+    "express": "~4.15.5",
+    "mongoose": "^5.4.17",
+    "morgan": "~1.9.0",
+    "qs": "^6.6.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
