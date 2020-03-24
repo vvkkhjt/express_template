@@ -70,7 +70,7 @@ app.use(cookieParser());
 // })
 
 // 路由
-app.use('/meta/job', require('./routes/job'));
+app.use('/meta/index', require('./routes/index'));
 
 // 统一处理响应数据handler
 app.use(require("./middleware/apiHandler"))
